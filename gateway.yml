@@ -13,7 +13,7 @@ spring:
         - id: accountRoute
           uri: http://localhost:8080/
           predicates:
-            - Path=/auth/**
+            - Path=/api/v1/catalog/auth/**
         - id: mscatalog
           uri: lb://api-catalog
           predicates:
